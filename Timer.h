@@ -1,24 +1,17 @@
-
-
 #include <string>
 #include <iostream>
 #include <chrono>
 
-
-
 using namespace std;
-
 
 
 class Timer
 {
 public:
-
 	Timer()
 	{
 		start = std::chrono::high_resolution_clock::now();
 	}
-
 
 	string get_execution_time()
 	{
