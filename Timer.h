@@ -5,7 +5,7 @@
 using namespace std;
 
 
-class Timer
+class ExecutionTimer
 {
 public:
 	Timer()
