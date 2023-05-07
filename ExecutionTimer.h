@@ -8,6 +8,7 @@ using namespace std;
 class ExecutionTimer
 {
 public:
+
 	Timer()
 	{
 		start = std::chrono::high_resolution_clock::now();
