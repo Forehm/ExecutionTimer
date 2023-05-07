@@ -11,21 +11,22 @@ public:
 
 	Timer()
 	{
-		start = std::chrono::high_resolution_clock::now();
+		start_ = std::chrono::high_resolution_clock::now();
 	}
 
 	string get_execution_time()
 	{
-		end = std::chrono::high_resolution_clock::now();
-		duration = end - start;
+		end_ = std::chrono::high_resolution_clock::now();
+		duration_ = end_ - start_;
 		float result = duration.count();
-		string res = to_string(result);
-		return res;
+		string result_as_string = to_string(result);
+		return result_as_string;
 	}
 
 private:
-	std::chrono::time_point<std::chrono::steady_clock> start;
-	std::chrono::time_point<std::chrono::steady_clock> end;
-	std::chrono::duration<float> duration;
+
+	std::chrono::time_point<std::chrono::steady_clock> start_;
+	std::chrono::time_point<std::chrono::steady_clock> end_;
+	std::chrono::duration<float> duration_;
 };
 
