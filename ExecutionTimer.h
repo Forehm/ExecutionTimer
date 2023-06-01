@@ -2,8 +2,6 @@
 #include <iostream>
 #include <chrono>
 
-using namespace std;
-
 
 class ExecutionTimer
 {
@@ -19,7 +17,7 @@ public:
 		end_ = std::chrono::high_resolution_clock::now();
 		duration_ = end_ - start_;
 		float result = duration.count();
-		string result_as_string = to_string(result);
+		std::string result_as_string = std::to_string(result);
 		return result_as_string;
 	}
 
