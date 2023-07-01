@@ -7,7 +7,7 @@ class ExecutionTimer
 {
 public:
 
-	Timer() start_(std::chrono::high_resolution_clock::now())
+	Timer() : start_(std::chrono::high_resolution_clock::now())
 	{
 	}
 
