@@ -7,9 +7,8 @@ class ExecutionTimer
 {
 public:
 
-	Timer()
+	Timer() start_(std::chrono::high_resolution_clock::now())
 	{
-		start_ = std::chrono::high_resolution_clock::now();
 	}
 
 	string get_execution_time()
