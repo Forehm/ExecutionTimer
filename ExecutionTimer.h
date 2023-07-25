@@ -21,7 +21,6 @@ public:
 	}
 
 private:
-
 	std::chrono::time_point<std::chrono::steady_clock> start_;
 	std::chrono::time_point<std::chrono::steady_clock> end_;
 	std::chrono::duration<float> duration_;
