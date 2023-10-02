@@ -15,7 +15,7 @@ public:
 	{
 		end_ = std::chrono::high_resolution_clock::now();
 		duration_ = end_ - start_;
-		float result = duration.count();
+		float result = duration_.count();
 		std::string result_as_string = std::to_string(result);
 		return result_as_string;
 	}
