@@ -11,7 +11,7 @@ public:
 	{
 	}
 
-	string get_execution_time()
+	std::string get_execution_time()
 	{
 		end_ = std::chrono::high_resolution_clock::now();
 		duration_ = end_ - start_;
