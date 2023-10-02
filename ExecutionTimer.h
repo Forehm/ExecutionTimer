@@ -6,7 +6,6 @@
 class ExecutionTimer
 {
 public:
-
 	ExecutionTimer() : start_(std::chrono::high_resolution_clock::now())
 	{
 	}
