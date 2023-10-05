@@ -1,4 +1,4 @@
-# ExecutionTimer
+# Execution Timer
 It is a timer of execution time of the any program.
 It requires C++14 or later and x86
 You just need to create an object of the class Timer;
